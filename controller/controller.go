@@ -606,5 +606,5 @@ func (c *Manager) startLeading(ctx context.Context, rolloutThreadiness, serviceT
 		go wait.Until(func() { c.wg.Add(1); c.notificationsController.Run(rolloutThreadiness, ctx.Done()); c.wg.Done() }, time.Second, ctx.Done())
 
 	}
-	log.Info("Started controller")
+	log.Info("JODI Started controller")
 }
